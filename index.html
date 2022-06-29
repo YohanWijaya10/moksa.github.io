@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="script.js">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">     
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #000000;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+        *{
+            margin:0;
+            padding:0;
+            
+            
+        }
+        .part1{
+            background-image: url('mainbaner.jpg');
+            background-repeat: no-repeat;
+            background-size: 100vw;
+            transition: all 0.2s ease-out;
+            animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+
+            
+        }
+        @keyframes text-focus-in {
+        0% {
+            filter: blur(12px);
+            opacity: 0;
+        }
+        100% {
+            filter: blur(0px);
+            opacity: 1;
+        }
+        }
+        @keyframes scale-in-center {
+            0% {
+                
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes puff-in-center {
+            0% {
+                transform: scale(2);
+                filter: blur(-4px);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+        @keyframes infinite-text{
+            0% {
+                color: white;
+            }
+            50% {
+                color: grey;
+            }
+            100% {
+                color: white;
+            }
+        }
+        @keyframes infinite-text2{
+            0% {
+                background: linear-gradient(transparent,red); 
+            }
+            50% {
+                background: linear-gradient(red ,transparent); 
+            }
+            100% {
+                background: linear-gradient(transparent,red); 
+            }
+        }
+        .nav img{
+            width: 20vmin;
+        }
+        .nav{
+            padding: 2%;
+            display: flex;
+            align-items: center;
+            animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            transition: all 1s ease-in-out;
+            
+        }
+        .nav p{
+            color:white ;
+            font-size: 3vmin;
+            padding: 1% 3%;
+            font-family: 'Open Sans', sans-serif;
+            transition: all 0.2s ease-out;
+            overflow: hidden;
+            
+            
+        }
+        .nav p:hover{
+            
+            color:#93231f;
+            
+        }
+        .centerimg{
+            text-align: center;
+            margin-top : 10%;
+            
+            
+        }
+        .centerimg img{
+            width: 50vmin;
+            animation: text-focus-in 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        }
+        .part2{
+            text-align: center;
+            margin-top: 60vmin;
+        }
+        .part2 h1{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 4vmin;
+            color: white;
+            margin-top: 35%;
+            
+        }
+        .sp1{
+            animation: infinite-text 2s infinite;
+            animation-delay: 0.2s;
+        }
+        .sp2{
+            animation: infinite-text 2s infinite;
+            animation-delay: 0.4s;
+        }
+        .sp3{
+            animation: infinite-text 2s infinite;
+            animation-delay: 0.6s;
+        }
+        .sp4{
+            animation: infinite-text 2s infinite;
+            animation-delay: 0.8s;
+        }
+        .sp5{
+            animation: infinite-text 2s infinite;
+            animation-delay: 1s;
+        }
+        .sp6{
+            animation: infinite-text 2s infinite;
+            animation-delay: 1.2s;
+        }
+        .sp7{
+            animation: infinite-text 2s infinite;
+            animation-delay: 1.4s;
+        }
+        .sp8{
+            animation: infinite-text 2s infinite;
+            animation-delay: 1.6s;
+        }
+        .sp9{
+            animation: infinite-text 2s infinite;
+            animation-delay: 1.8s;
+        }
+        .sp10{
+            animation: infinite-text 2s infinite;
+            animation-delay: 2s;
+        }
+        .sp11{
+            animation: infinite-text 2s infinite;
+            animation-delay: 2.2s;
+        }
+        .sp12{
+            animation: infinite-text 2s infinite;
+            animation-delay: 2.4s;
+        }
+        .sp13{
+            animation: infinite-text 2s infinite;
+            animation-delay: 2.6s;
+        }
+        .sp14{
+            animation: infinite-text 2s infinite;
+            animation-delay: 2.8s;
+        }
+        ::-webkit-scrollbar {
+            width: 15px;
+            transition: all 10s ease-in-out;
+        }
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+            transition: all 1s ease-in-out;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(transparent,red); 
+            border-radius: 10px;
+            
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(transparent,#b30000); 
+            
+        }
+        .part3{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 7%;
+            flex-wrap: wrap
+        }
+        .part3 p{
+            color: white;
+            font-size: 3vmin;
+            margin:3% 5%;
+            max-width: 40%;
+            line-height: 1.8em;
+        }
+        .part3 img{
+            width: 60vmin;
+            padding:3% 5%;
+            transform: rotatez(20deg);
+            
+            
+        }
+        
+        
+        .second{
+            margin-top:5%;
+        }
+        .part4{
+            text-align: center;
+            margin-top: 1vmin;
+        }
+        .part4 h1{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 4vmin;
+            color: white;
+            margin-top: 10%;
+            
+        }
+        .part5{
+            margin:3% 5%;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .child5{
+            color: white;
+            font-size: 3vmin;
+            margin-top: 5%;
+            transition: all 1s ease-in-out;
+            
+            
+        }
+        .child5:hover{
+            filter: drop-shadow(0 -2vmin 2vmin rgb(119, 29, 41));
+            
+            transition: all 0.1s ease-in-out;
+        }
+        @keyframes anjay{
+            0%{
+                filter: drop-shadow(0 -2vmin 2vmin rgb(119, 29, 41));
+            }
+            20%{
+                filter: drop-shadow(0 -2vmin 2vmin rgb(119, 29, 41));
+            }
+            40%{
+                filter: drop-shadow(0 -2vmin 2vmin rgb(16, 67, 187));
+            }
+            60%{
+                filter: drop-shadow(0 -2vmin 2vmin rgb(177, 226, 3));
+            }
+            80%{
+                filter: drop-shadow(0 -2vmin 2vmin rgb(228, 11, 236));
+            }
+            100%{
+                filter: drop-shadow(0 -2vmin 2vmin rgb(119, 29, 41));
+            }
+        }
+        .child5 img{
+            width: 40vmin;
+        }
+        .child5 p{
+            font-family: 'Open Sans', sans-serif;
+            margin-left: 1%;
+            
+        }
+        .part42{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 6%; 
+            text-decoration: none;
+        }
+        .part42 img{
+            width: 20vmin;
+        }
+        .p42 p{
+            text-align: center;
+            font-size: 3vmin;
+            color: white;
+            text-decoration: none;
+        }
+        .part42 a{
+            text-decoration: none;
+        }
+        .child51{
+            display: flex;
+            align-items: center;
+            margin-top: 10%;
+            
+        }
+        .p51 p {
+            font-size: 5vmin;
+            color: white;
+            margin-left: 5%;
+        }
+        .part5{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 5%;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .p51 img{
+            width: 5vmin;
+        }
+        .p52 img{
+            width: 55vmin;
+        }
+        .nav a{
+            color: white;
+        }
+        @media only screen and (max-width: 1024px){
+            .part1{
+                background-size: 150vh;
+                background-image: none;
+            }
+            .part2 h1{
+                font-size: 3vmin;
+            }
+            .centerimg{
+                margin-top:50%;
+                width: 100vw;
+            }
+            .part3 { 
+                text-align: center;
+                display: block;
+                flex-direction: column-reverse;
+            }
+           
+            .part3 p{
+                text-align: center;
+                margin-left: 30%;
+            }
+            div#p31  {order: 2;}
+            div#p32  {order: 1;}
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="part1">
+        <div class="nav">
+            <img src="moksha logo putih.png" alt="">
+            <p><a href="#one" style="text-decoration: none ;">HOME</a></p>
+            <p><a href="#two" style="text-decoration: none ;">ABOUT</a></p>
+            <p><a href="#three" style="text-decoration: none ;">SHOP</a></p>
+            <p><a href="#four" style="text-decoration: none ;">CONTACT</a></p>
+            
+        </div>
+        <div class="centerimg">
+            <img src="moksha logo putih.png" alt="">
+        </div>
+        <div class="part2">
+            <h1 id="two" class=" reveal">
+                <span class="sp1">M &nbsp;&nbsp;</span>
+                <span class="sp2">O &nbsp;&nbsp;</span>
+                <span class="sp3">K &nbsp;&nbsp;</span>
+                <span class="sp4">S &nbsp;&nbsp;</span>
+                <span class="sp5">H &nbsp;&nbsp;</span>
+                <span class="sp6">A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="sp7">B &nbsp;&nbsp;</span>
+                <span class="sp8">R &nbsp;&nbsp;</span>
+                <span class="sp9">A &nbsp;&nbsp;</span>
+                <span class="sp10">C &nbsp;&nbsp;</span>
+                <span class="sp11">E &nbsp;&nbsp;</span>
+                <span class="sp12">L &nbsp;&nbsp;</span>
+                <span class="sp13" >A &nbsp;&nbsp;</span>
+                <span class="sp14">T &nbsp;&nbsp;</span>
+            </h1>
+        </div>
+        <div class="part3">
+                <p>Moksha Bracelat adalah gelang Tridatu premium khas bali .Tridhatu merupakan susunan benang dengan nilai filosofis yang dalam dan diyakini oleh umat Hindu memiliki kekuatan.Tri berarti tiga dan Datu berarti elemen atau warna. Tiga warna benang Tri Datu juga sebagai lambang Kesucian Tuhan</p>
+                <img src="tridatu 2mm 1.jpg" alt="">
+        </div>
+        <div class="part4 reveal" id="three">
+            <h1>
+                <span class="sp1">S &nbsp;&nbsp;</span>
+                <span class="sp2">H &nbsp;&nbsp;</span>
+                <span class="sp3">O &nbsp;&nbsp;</span>
+                <span class="sp4">P &nbsp;&nbsp;</span>
+            </h1>
+        </div>
+        <div class="part5"  >
+            <div class="child5">
+                <img src="crown 2.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Crown</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 5.000</p>
+            </div>
+            <div class="child5">
+                <img src="black pink 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Black pink</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 10.000</p>
+            </div>
+            <div class="child5">
+                <img src="brahma 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Brahma</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 4.000</p>
+            </div>
+            <div class="child5">
+                <img src="coklat muda 1mm 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Coklat Muda</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 4.000</p>
+            </div>
+            <div class="child5">
+                <img src="coklat tua 1mm 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Coklat tua</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 3.000</p>
+            </div>
+            <div class="child5">
+                <img src="hello kitty 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Hello Kitty</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 5.000</p>
+            </div>
+            <div class="child5">
+                <img src="hijau 1mm 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Hijau</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 3.000</p>
+            </div>
+            <div class="child5">
+                <img src="hitam 1mm 2.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Hitam</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 3.000</p>
+            </div>
+            <div class="child5">
+                <img src="pink 1mm 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Pink</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 3.000</p>
+            </div>
+            <div class="child5">
+                <img src="magnet 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Magnet</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 20.000</p>
+            </div>
+            <div class="child5">
+                <img src="red 1mm 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Red</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 3.000</p>
+            </div>
+            <div class="child5">
+                <img src="tridatu 1mm 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Tridatu</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 4.000</p>
+            </div>
+            <div class="child5">
+                <img src="wisnu 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Wisnu</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 8.000</p>
+            </div>
+            <div class="child5">
+                <img src="aquamarine  1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Aquamarin</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 15.000</p>
+            </div>
+            <div class="child5">
+                <img src="emerald 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Emerald</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 30.000</p>
+            </div>
+            <div class="child5">
+                <img src="kecubung 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Kecubung</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 15.000</p>
+            </div>
+            <div class="child5">
+                <img src="lava 1 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Lava</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 15.000</p>
+            </div>
+            <div class="child5">
+                <img src="moonstone 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Moonstone</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 15.000</p>
+            </div>
+            <div class="child5">
+                <img src="pirus 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Pirus</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 30.000</p>
+            </div>
+            <div class="child5">
+                <img src="pirus giok emeral 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Pirus Giok Emeral</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 30.000</p>
+            </div>
+            <div class="child5">
+                <img src="rutile 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Rutile</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 15.000</p>
+            </div>
+            <div class="child5">
+                <img src="rutile aquamarin 2.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Rutile Aquamarin</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 25.000</p>
+            </div>
+            <div class="child5">
+                <img src="rutile kecubung 2.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Rutile Kecubung</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 15.000</p>
+            </div>
+            <div class="child5">
+                <img src="rutile lava 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Rutile Lava</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 25.000</p>
+            </div>
+            <div class="child5">
+                <img src="rutile moonstone 2.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Rutile Moonstone</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 25.000</p>
+            </div>
+            <div class="child5">
+                <img src="tiger eye  2.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Tiger Eye</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 15.000</p>
+            </div>
+            <div class="child5">
+                <img src="Tiger Emerald 1.jpg" alt="">
+                <p>Name&nbsp;&nbsp;: Tiger Emerald</p>
+                <p>Price&nbsp;&nbsp;&nbsp;: Rp 25.000</p>
+            </div>
+        </div>
+        <div class="part4">
+            <h1>
+                <span class="sp1">B &nbsp;&nbsp;</span>
+                <span class="sp2">U &nbsp;&nbsp;</span>
+                <span class="sp3">Y &nbsp;&nbsp;</span>
+                <span class="sp4">&nbsp;</span>
+                <span class="sp3">M &nbsp;&nbsp;</span>
+                <span class="sp3">E &nbsp;&nbsp;</span>
+            </h1>
+        </div>
+        <div class="part42">
+            <a href="https://shopee.co.id/weily69">
+                <div class="img1 p42">
+                <img src="sp1.png" alt="">
+                <p>Moksha_Bracelet</p>
+            </div>
+            </a>
+            <a href="https://www.tokopedia.com/permata-natural">
+                <div class="img2 p42">
+                <img src="sp2.png" alt="">
+                <p>WEILI KINDZ</p>
+            </div>
+            </a>
+            <a href="https://www.lazada.co.id/shop/moksha-bracelet">
+                <div class="img3 p42">
+                <img src="sp3.png" alt="">
+                <p>Moksha_ID</p>
+            </div>
+            </a>
+            
+        </div>
+        <div class="part4" id="four">
+            <h1>
+                <span class="sp1">S &nbsp;&nbsp;</span>
+                <span class="sp2">O &nbsp;&nbsp;</span>
+                <span class="sp3">C &nbsp;&nbsp;</span>
+                <span class="sp4">I &nbsp;&nbsp;</span>
+                <span class="sp5">A &nbsp;&nbsp;</span>
+                <span class="sp6">L &nbsp;&nbsp;</span>
+                <span class="sp7"> &nbsp;&nbsp;</span>
+                <span class="sp7">M &nbsp;&nbsp;</span>
+                <span class="sp8">E &nbsp;&nbsp;</span>
+                <span class="sp9">D &nbsp;&nbsp;</span>
+                <span class="sp10">I &nbsp;&nbsp;</span>
+                <span class="sp11">A &nbsp;&nbsp;</span>
+            </h1>
+        </div>
+        <div class="part5">
+            <div class="p51">
+                <div class="child51">
+                    <img src="sm1.png" alt="">
+                    <p> Moksha_Bracelet</p>
+                </div>
+                <div class="child51">
+                    <img src="sm2.png" alt="">
+                    <p>087757890777</p>
+                </div>
+            </div>
+            <div class="p52">
+                <img src="logosm.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+    const scrollElements = document.querySelectorAll(".js-scroll");
+
+const elementInView = (el, dividend = 1) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+  );
+};
+
+const elementOutofView = (el) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
+
+const displayScrollElement = (element) => {
+  element.classList.add("scrolled");
+};
+
+const hideScrollElement = (element) => {
+  element.classList.remove("scrolled");
+};
+
+const handleScrollAnimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el, 1.25)) {
+      displayScrollElement(el);
+    } else if (elementOutofView(el)) {
+      hideScrollElement(el)
+    }
+  })
+}
+
+window.addEventListener("scroll", () => { 
+  handleScrollAnimation();
+});
+</script>
+    
+    
+</body>
+</html>
