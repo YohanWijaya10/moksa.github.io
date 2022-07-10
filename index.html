@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="script.js">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/jpg" href="logosm.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">     
+    <title>Moksha Bracelet</title>
+    <style>
+        body{
+            background-color: #000000;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+        *{
+            margin:0;
+            padding:0;
+            
+            
+        }
+        .part1{
+            background-image: url('mainbaner.jpg');
+            background-repeat: no-repeat;
+            background-size: 100vw;
+            transition: all 0.2s ease-out;
+            animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+
+            
+        }
+        @keyframes text-focus-in {
+        0% {
+            filter: blur(12px);
+            opacity: 0;
+        }
+        100% {
+            filter: blur(0px);
+            opacity: 1;
+        }
+        }
+        @keyframes scale-in-center {
+            0% {
+                
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes puff-in-center {
+            0% {
+                transform: scale(2);
+                filter: blur(-4px);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+        @keyframes infinite-text{
+            0% {
+                color: white;
+            }
+            50% {
+                color: grey;
+            }
+            100% {
+                color: white;
+            }
+        }
+        @keyframes infinite-text2{
+            0% {
+                background: linear-gradient(transparent,red); 
+            }
+            50% {
+                background: linear-gradient(red ,transparent); 
+            }
+            100% {
+                background: linear-gradient(transparent,red); 
+            }
+        }
+        .nav img{
+            width: 20vmin;
+        }
+        .nav{
+            padding: 2%;
+            display: flex;
+            align-items: center;
+            animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            transition: all 1s ease-in-out;
+            
+        }
+        .nav p{
+            color:white ;
+            font-size: 3vmin;
+            padding: 1% 3%;
+            font-family: 'Open Sans', sans-serif;
+            transition: all 0.2s ease-out;
+            overflow: hidden;
+            
+            
+        }
+        .nav p:hover{
+            
+            color:#93231f;
+            
+        }
+        .centerimg{
+            text-align: center;
+            margin-top : 10%;
+            
+            
+        }
+        .centerimg img{
+            width: 50vmin;
+            animation: text-focus-in 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        }
+        .part2{
+            text-align: center;
+            margin-top: 60vmin;
+        }
+        .part2 h1{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 4vmin;
+            color: white;
+            margin-top: 35%;
+            
+        }
+        .sp1{
+            animation: infinite-text 2s infinite;
+            animation-delay: 0.2s;
+        }
+        .sp2{
+            animation: infinite-text 2s infinite;
+            animation-delay: 0.4s;
+        }
+        .sp3{
+            animation: infinite-text 2s infinite;
+            animation-delay: 0.6s;
+        }
+        .sp4{
+            animation: infinite-text 2s infinite;
+            animation-delay: 0.8s;
+        }
+        .sp5{
+            animation: infinite-text 2s infinite;
+            animation-delay: 1s;
+        }
+        .sp6{
+            animation: infinite-text 2s infinite;
+            animation-delay: 1.2s;
+        }
+        .sp7{
+            animation: infinite-text 2s infinite;
+            animation-delay: 1.4s;
+        }
+        .sp8{
+            animation: infinite-text 2s infinite;
+            animation-delay: 1.6s;
+        }
+        .sp9{
+            animation: infinite-text 2s infinite;
+            animation-delay: 1.8s;
+        }
+        .sp10{
+            animation: infinite-text 2s infinite;
+            animation-delay: 2s;
+        }
+        .sp11{
+            animation: infinite-text 2s infinite;
+            animation-delay: 2.2s;
+        }
+        .sp12{
+            animation: infinite-text 2s infinite;
+            animation-delay: 2.4s;
+        }
+        .sp13{
+            animation: infinite-text 2s infinite;
+            animation-delay: 2.6s;
+        }
+        .sp14{
+            animation: infinite-text 2s infinite;
+            animation-delay: 2.8s;
+        }
+        ::-webkit-scrollbar {
+            width: 15px;
+            transition: all 10s ease-in-out;
+        }
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+            transition: all 1s ease-in-out;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(transparent,red); 
+            border-radius: 10px;
+            
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(transparent,#b30000); 
+            
+        }
+        .part3{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 7%;
+            flex-wrap: wrap
+        }
+        .part3 p{
+            color: white;
+            font-size: 3vmin;
+            margin:3% 5%;
+            max-width: 40%;
+            line-height: 1.8em;
+        }
+        .part3 img{
+            width: 60vmin;
+            padding:3% 5%;
+            transform: rotatez(20deg);
+            
+            
+        }
+        .plas{
+            margin-top: 5%;
+        }
+        
+        
+        .second{
+            margin-top:5%;
+        }
+        .part4{
+            text-align: center;
+            margin-top: 1vmin;
+        }
+        .part4 h1{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 4vmin;
+            color: white;
+            margin-top: 10%;
+            
+        }
+        .part5{
+            margin:3% 5%;
+            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(0, min(100%/1, max(64px, 100%/3))));
+            justify-content: space-evenly;
+        }
+        .child5{
+            color: white;
+            font-size: 3vmin;
+            margin-top: 5%;
+            transition: all 1s ease-in-out;
+            
+            
+        }
+        .child5:hover{
+            filter: drop-shadow(0 -2vmin 2vmin rgb(119, 29, 41));
+            
+            transition: all 0.1s ease-in-out;
+        }
+        @keyframes rgb{
+            0%{
+                filter: drop-shadow(0 -2vmin 2vmin rgb(119, 29, 41));
+            }
+            20%{
+                filter: drop-shadow(0 -2vmin 2vmin rgb(119, 29, 41));
+            }
+            40%{
+                filter: drop-shadow(0 -2vmin 2vmin rgb(16, 67, 187));
+            }
+            60%{
+                filter: drop-shadow(0 -2vmin 2vmin rgb(177, 226, 3));
+            }
+            80%{
+                filter: drop-shadow(0 -2vmin 2vmin rgb(228, 11, 236));
+            }
+            100%{
+                filter: drop-shadow(0 -2vmin 2vmin rgb(119, 29, 41));
+            }
+        }
+        .child5 img{
+            width: 40vmin;
+        }
+        .child5 p{
+            font-family: 'Open Sans', sans-serif;
+            
+            overflow: hidden;
+            
+        }
+        .child51 p{
+            margin-left: 2%;
+        }
+        .part42{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 6%; 
+            text-decoration: none;
+        }
+        .part42 img{
+            width: 20vmin;
+        }
+        .p42 p{
+            text-align: center;
+            font-size: 3vmin;
+            color: white;
+            text-decoration: none;
+        }
+        .part42 a{
+            text-decoration: none;
+        }
+        .child51{
+            display: flex;
+            align-items: center;
+            margin-top: 4%;
+            text-decoration: none;
+            
+        }
+        
+        a{
+            text-decoration: none;
+        }
+        .p51 p {
+            font-size: 5vmin;
+            color: white;
+            
+        }
+        .child5 p{
+            font-size: 2.5vmin;
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .part5{
+            display: flex;
+            align-items: center;
+            margin-top: 0%;
+            font-family: 'Open Sans', sans-serif;
+            
+        }
+        .cover5{
+            border: solid 1px rgb(51, 50, 50);
+            border-radius: 5%;
+            margin: 2% 4%;
+            margin-top: 4%;
+        }
+        .p51 img{
+            width: 5vmin;
+        }
+        .p52 img{
+            width: 55vmin;
+        }
+        .nav a{
+            color: white;
+        }
+        @media only screen and (max-width: 1024px){
+            .part1{
+                background-size: 150vh;
+                background-image: none;
+            }
+            .part2 h1{
+                font-size: 3vmin;
+            }
+            .centerimg{
+                margin-top:50%;
+                width: 100vw;
+            }
+            .part3 { 
+                text-align: center;
+                display: block;
+                flex-direction: column-reverse;
+            }
+            .part3 p{
+                text-align: center;
+                margin-left: 30%;
+            }
+            div#p31  {order: 2;}
+            div#p32  {order: 1;}
+        }
+
+        .textshop{
+            text-align: center;
+            font-size: 3vmin;
+            margin-top: 3%;
+            
+        }
+        .sp{
+            color: goldenrod;
+        }
+        .p500{
+            margin-top: 10%;
+        }
+        .box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background-image: linear-gradient(to right, rgba(38, 13, 9, 0.8), rgba(6, 9, 13, .8) );
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  overflow: hidden;
+  
+  
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: white;
+  font-size: 3vmin;
+  font-family: Tahoma, Arial, sans-serif;
+  margin-top: 5%;
+}
+.popup p {
+  
+  color: white;
+  font-family: Tahoma, Arial, sans-serif;
+  
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  
+}
+.popup .close:hover {
+  color: #d80606;
+  
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  color:white ;
+  font-family: Tahoma, Arial, sans-serif;
+  
+}
+.content{
+    margin-top: 4%;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+    
+  }
+  .popup{
+    width: 70%;
+  }
+}
+    .popup img{
+        width: 50vmin;
+        text-align: center;
+        transition: all 0.2s ease-out;
+    }
+    .imgpop {
+        text-align: center;
+        transition: all 0.2s ease-out;
+        
+        
+    }
+    .imgpop img:hover {
+        width: 55vmin;
+        overflow: hidden;
+        transition: all 0.2s ease-out;
+        
+    }
+    .iconpop {
+        display: flex ;
+        justify-content: center;
+        margin-top: 5%;
+        
+
+    }
+    .iconpop img {
+        width: 8vmin;
+        margin: 0% 2%;
+
+        
+    }
+    @keyframes color {
+        from {
+            background-image: linear-gradient(to right, rgba(18, 27, 38, .7), rgba(6, 9, 13, .7) );
+            transition: all 0.2s ease-out;
+        }
+        10% {
+            background-image: linear-gradient(to right, rgba(18, 27, 38, .7), rgba(6, 9, 13, .7) , rgba(18, 27, 38, .7), rgba(6, 9, 13, .7) );
+            transition: all 0.2s ease-out;
+        }
+            50% {
+            background-image: linear-gradient(to right, rgba(18, 27, 38, .7), rgba(6, 9, 13, .7) );
+            transition: all 0.2s ease-out;
+        }
+        75% {
+            transition: all 0.2s ease-out;
+            background-image: linear-gradient(to right, rgba(18, 27, 38, .7), rgba(6, 9, 13, .7)  ,rgba(18, 27, 38, .7), rgba(6, 9, 13, .7) );
+        }
+        100% {
+            background-image: linear-gradient(to right, rgba(18, 27, 38, .7), rgba(6, 9, 13, .7)  );
+            transition: all 0.2s ease-out;
+        }
+    }
+    .p5second a{
+        margin-top: 5%;
+    }
+    .part5 a{
+        margin: 4% 0.5%;
+    }
+
+        
+    </style>
+</head>
+<body class="reveal">
+    <div class="part1 reveal">
+        <div class="nav">
+            <img src="moksha logo putih.png" alt="">
+            <p><a href="#one" style="text-decoration: none ;">HOME</a></p>
+            <p><a href="#two" style="text-decoration: none ;">ABOUT</a></p>
+            <p><a href="#three" style="text-decoration: none ;">SHOP</a></p>
+            <p><a href="#four" style="text-decoration: none ;">CONTACT</a></p>
+            
+        </div>
+        <div class="centerimg">
+            <img src="moksha logo putih.png" alt="">
+        </div>
+        <div class="part2">
+            <h1 id="two" class=" reveal">
+                <span class="sp1">M &nbsp;&nbsp;</span>
+                <span class="sp2">O &nbsp;&nbsp;</span>
+                <span class="sp3">K &nbsp;&nbsp;</span>
+                <span class="sp4">S &nbsp;&nbsp;</span>
+                <span class="sp5">H &nbsp;&nbsp;</span>
+                <span class="sp6">A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="sp7">B &nbsp;&nbsp;</span>
+                <span class="sp8">R &nbsp;&nbsp;</span>
+                <span class="sp9">A &nbsp;&nbsp;</span>
+                <span class="sp10">C &nbsp;&nbsp;</span>
+                <span class="sp11">E &nbsp;&nbsp;</span>
+                <span class="sp12">L &nbsp;&nbsp;</span>
+                <span class="sp13" >A &nbsp;&nbsp;</span>
+                <span class="sp14">T &nbsp;&nbsp;</span>
+            </h1>
+        </div>
+        <div class="part3">
+                <p>Moksha Bracelat adalah gelang Tridatu premium khas bali .Tridhatu merupakan susunan benang dengan nilai filosofis yang dalam dan diyakini oleh umat Hindu memiliki kekuatan.Tri berarti tiga dan Datu berarti elemen atau warna. Tiga warna benang Tri Datu juga sebagai lambang Kesucian Tuhan</p>
+                <img src="tridatu 2mm 1.jpg" alt="">
+        </div>
+        <div class="part4 reveal" id="three">
+            <h1>
+                <span class="sp1">S &nbsp;&nbsp;</span>
+                <span class="sp2">H &nbsp;&nbsp;</span>
+                <span class="sp3">O &nbsp;&nbsp;</span>
+                <span class="sp4">P &nbsp;&nbsp;</span>
+            </h1>
+        </div>
+    <div class="cover5">
+        <div class="textshop">
+            <span class="sp">T &nbsp;&nbsp;</span>
+            <span class="sp">R &nbsp;&nbsp;</span>
+            <span class="sp">I &nbsp;&nbsp;</span>
+            <span class="sp">D &nbsp;&nbsp;</span>
+            <span class="sp">A &nbsp;&nbsp;</span>
+            <span class="sp">T &nbsp;&nbsp;</span>
+            <span class="sp">U &nbsp;&nbsp;</span>
+
+        </div>
+        <div class="part5"  >
+            
+            <a href="#popup29" id="g20">
+                <div class="child5">
+                <img src="crown 2.jpg" alt="">
+                <p>Crown</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup28" id="g19">
+                <div class="child5">
+                <img src="black pink 1.jpg" alt="">
+                <p>Black pink</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup27" id="g18">
+                <div class="child5" >
+                <img src="brahma 1.jpg" alt="">
+                <p>Brahma</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup26" id="g17">
+                <div class="child5">
+                <img src="hello kitty 1.jpg" alt="">
+                <p>Hello Kitty</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup25" id="g16">
+                <div class="child5">
+                <img src="tridatu 1mm 1.jpg" alt="">
+                <p>Tridatu</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup24" id="g15">
+                <div class="child5">
+                <img src="wisnu 1.jpg" alt="">
+                <p>Wisnu</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup23" id="g14">
+                <div class="child5" >
+                <img src="aquamarine  1.jpg" alt="">
+                <p>Aquamarine</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup22" id="g13">
+                <div class="child5">
+                <img src="emerald 1.jpg" alt="">
+                <p>Emerald</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup21" id="g12">
+                <div class="child5">
+                <img src="kecubung 1.jpg" alt="">
+                <p>Kecubung</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup20" id="g11">
+                <div class="child5">
+                <img src="lava 1 1.jpg" alt="">
+                <p>Lava</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup19" id="g10">
+                <div class="child5">
+                <img src="moonstone 1.jpg" alt="">
+                <p>Barjad Api</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup18" id="g9">
+                <div class="child5">
+                <img src="pirus 1.jpg" alt="">
+                <p>Pirus</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup16" id="g8">
+                <div class="child5">
+                <img src="pirus giok emeral 1.jpg" alt="">
+                <p>Three Angle</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup15" id="g6">
+                <div class="child5">
+                <img src="rutile 1.jpg" alt="">
+                <p>Rambut Sendana</p>
+                
+            </div>
+            </a>
+            <a href="#popup14" id="g7">
+                <div class="child5">
+                <img src="rutile aquamarin 2.jpg" alt="">
+                <p>Rambut Sendana Aquamarine</p>
+                </div>
+            </a>
+            <a href="#popup13" id="g6">
+                <div class="child5">
+                <img src="rutile kecubung 2.jpg" alt="">
+                <p>Rambut Sendana Kecubung</p>
+            </div>
+            </a>
+            <a href="#popup12" id="g5">
+                <div class="child5">
+                <img src="rutile lava 1.jpg" alt="">
+                <p>Rambut Sendana Lava</p>
+                
+            </div>
+            </a>
+            <a href="#popup11 " id="g4">
+                <div class="child5">
+                <img src="rutile moonstone 2.jpg" alt="">
+                <p>Rambut Sendana Barjad api</p>
+            </div>
+            </a>
+            <a href="#popup10" id="g3">
+                <div class="child5">
+                <img src="tiger eye  2.jpg" alt="">
+                <p>Tiger's Eye</p>
+                
+            </div>
+            </a>
+            
+            <a href="#popup9" id="g2">
+                <div class="child5">
+                <img src="Tiger Emerald 1.jpg" alt="">
+                <p>Tiger's Green Emerald</p>
+            </div>
+
+            </a>
+            
+            <a href="#popup8" id="g1">
+                <div class="child5">
+                <img src="tridatu 7mantra 1.jpg" alt="">
+                <p>Tridatu mantra</p>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+    <div class="cover5">
+        <div class="textshop">
+            <span class="sp">G &nbsp;&nbsp;</span>
+            <span class="sp">E &nbsp;&nbsp;</span>
+            <span class="sp">L &nbsp;&nbsp;</span>
+            <span class="sp">A &nbsp;&nbsp;</span>
+            <span class="sp">N &nbsp;&nbsp;</span>
+            <span class="sp">G &nbsp;&nbsp;</span>
+            <span class="sp"> &nbsp;&nbsp;</span>
+            <span class="sp">A &nbsp;&nbsp;</span>
+            <span class="sp">U &nbsp;&nbsp;</span>
+            <span class="sp">R &nbsp;&nbsp;</span>
+            <span class="sp">A &nbsp;&nbsp;</span>
+            
+
+        </div>
+        <div class="part5 p5second" id="secondpart">
+            
+            <a href="#popup6">
+                <div class="child5">
+                <img src="hijau 1mm 1.jpg" alt="">
+                <p>Gelang Kedamaian</p>
+            </div>
+            </a>
+            
+            <a href="#popup5">
+                <div class="child5">
+                <img src="hitam 1mm 2.jpg" alt="">
+                <p>Gelang Kewibawaan</p>
+            </div></a>
+            <a href="#popup7">
+                <div class="child5">
+                <img src="pink 1mm 1.jpg" alt="">
+                <br>
+                <br>
+                <p>Gelang Feminim  dan Lembut</p>
+            </div>
+            </a>
+            
+            
+            <a href="#popup4">
+                <div class="child5">
+                <img src="magnet 2.jpg" alt="">
+                <p>Gelang Kewibawaan Magnet</p>
+            </div>
+            </a>
+            
+            <a href="#popup3">
+                <div class="child5">
+                <img src="red 1mm 1.jpg" alt="">
+                <p>Keberuntungan</p>
+            </div>
+            </a>
+            <a href="#popup2">
+                <div class="child5">
+                <img src="coklat muda 1mm 1.jpg" alt="">
+                <p>Gelang Kesederhanaan</p>
+            </div>
+            </a>
+             
+            <a href="#popup1">
+                <div class="child5">
+                <img src="coklat tua 1mm 1.jpg" alt="">
+                <p>Gelang Kharisma</p>
+            </div>
+            </a>
+            
+        </div>
+    </div>
+        <div class="part4">
+            <h1>
+                <span class="sp1">B &nbsp;&nbsp;</span>
+                <span class="sp2">U &nbsp;&nbsp;</span>
+                <span class="sp3">Y &nbsp;&nbsp;</span>
+                <span class="sp4">&nbsp;</span>
+                <span class="sp3">M &nbsp;&nbsp;</span>
+                <span class="sp3">E &nbsp;&nbsp;</span>
+            </h1>
+        </div>
+        
+        <div class="part42">
+            <a href="https://shopee.co.id/weily69">
+                <div class="img1 p42">
+                <img src="sp1.png" alt="">
+                <p>Moksha_Bracelet</p>
+            </div>
+            </a>
+            <a href="https://www.tokopedia.com/permata-natural">
+                <div class="img2 p42">
+                <img src="sp2.png" alt="">
+                <p>Moksha_ID</p>
+            </div>
+            </a>
+            <a href="https://www.lazada.co.id/shop/moksha-bracelet">
+                <div class="img3 p42">
+                <img src="sp3.png" alt="">
+                <p>Moksha_ID</p>
+            </div>
+            <a href="https://www.etsy.com/shop/MokshaID">
+                <div class="img3 p42">
+                <img src="Etsy_logo.svg.png" alt="" style="margin-top: 30% ;">
+                <p style="margin-top: 20% ;">MokshaID</p>
+            </div>
+            </a>
+            
+        </div>
+        <div class="part4" id="four">
+            <h1>
+                <span class="sp1">S &nbsp;&nbsp;</span>
+                <span class="sp2">O &nbsp;&nbsp;</span>
+                <span class="sp3">C &nbsp;&nbsp;</span>
+                <span class="sp4">I &nbsp;&nbsp;</span>
+                <span class="sp5">A &nbsp;&nbsp;</span>
+                <span class="sp6">L &nbsp;&nbsp;</span>
+                <span class="sp7"> &nbsp;&nbsp;</span>
+                <span class="sp7">M &nbsp;&nbsp;</span>
+                <span class="sp8">E &nbsp;&nbsp;</span>
+                <span class="sp9">D &nbsp;&nbsp;</span>
+                <span class="sp10">I &nbsp;&nbsp;</span>
+                <span class="sp11">A &nbsp;&nbsp;</span>
+            </h1>
+        </div>
+        <div class="part5 p500">
+            <a href="https://www.instagram.com/moksha_bracelet/">
+                <div class="p51 plas">
+                <div class="child51">
+                    <img src="sm1.png" alt="">
+                    <p> Moksha_Bracelet</p>
+                </div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=6287757890777">
+                <div class="child51">
+                    <img src="sm2.png" alt="">
+                    <p>087757890777</p>
+                </div>
+            </a>
+            <a href="https://www.tiktok.com/@moksha_bracelet">
+                <div class="child51">
+                    <img src="sm4.png" alt="">
+                    <p>moksha_bracelet</p>
+                </div>
+            </a>
+            </div>
+            <div class="p52">
+                <img src="logosm.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+    const scrollElements = document.querySelectorAll(".js-scroll");
+    const elementInView = (el, dividend = 1) => {
+    const elementTop = el.getBoundingClientRect().top;
+
+    return (
+    elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+    );
+};
+
+const elementOutofView = (el) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
+
+const displayScrollElement = (element) => {
+  element.classList.add("scrolled");
+};
+
+const hideScrollElement = (element) => {
+  element.classList.remove("scrolled");
+};
+
+const handleScrollAnimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el, 1.25)) {
+      displayScrollElement(el);
+    } else if (elementOutofView(el)) {
+      hideScrollElement(el)
+    }
+  })
+}
+
+window.addEventListener("scroll", () => { 
+  handleScrollAnimation();
+});
+</script>
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+// REVEAL //
+gsap.utils.toArray(".revealUp").forEach(function (elem) {
+    ScrollTrigger.create({
+    trigger: elem,
+    start: "top 80%",
+    end: "bottom 20%",
+    markers: true,
+    onEnter: function () {
+    gsap.fromTo(
+        elem,
+        { y: 100, autoAlpha: 0 },
+        {
+            duration: 1.25,
+            y: 0,
+            autoAlpha: 1,
+            ease: "back",
+            overwrite: "auto"
+        }
+    );
+    },
+    onLeave: function () {
+        gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+    }, 
+    onEnterBack: function () {
+        gsap.fromTo(
+        elem,
+        { y: -100, autoAlpha: 0 },
+        {
+            duration: 1.25,
+            y: 0,
+            autoAlpha: 1,
+            ease: "back",
+            overwrite: "auto"
+        }
+        );
+    },
+    onLeaveBack: function () {
+        gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+    }
+    });
+});
+
+</script>
+    <div id="popup1" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="coklat tua 1mm 1.jpg" alt="">
+        </div>
+        
+		<h2>Gelang Karisma</h2>
+		<a class="close" href="#secondpart">&times;</a>
+		<div class="content">
+			 Karisma yang Membuat keadaan atau bakat yang dihubungkan dengan kemampuan yang luar biasa dalam hal kepemimpinan seseorang untuk membangkitkan pemujaan dan rasa kagum dari masyarakat terhadap dirinya.
+		</div>
+        <div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Aura-Gelang-Keberuntungan-Gelang-Kewibawaan-Gelang-Kebahagiaan-i.5305950.20704970437?sp_atk=d419f75d-3f3b-481b-9bcd-c4bdd872bb0c&xptdk=d419f75d-3f3b-481b-9bcd-c4bdd872bb0c"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-keberuntungan-gelang-aura-gelang-makna-all-colour-1mm-kewibawaan"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tali-kharisma-i6679134677-s12700538985.html?clickTrackInfo=query%253A%253Bnid%253A6679134677%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679134677_ID%253Bprice%253A7000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6679134677%253Bsku_id%253A12700538985%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6oe059e"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+ <div id="popup2" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="coklat muda 1mm 1.jpg" alt="">
+        </div>
+        
+		<h2>Gelang Kesederhanaan</h2>
+		<a class="close" href="#secondpart">&times;</a>
+		<div class="content">
+			Kesederhanaan adalah properti, kondisi, atau kualitas ketika segalanya dapat dipertimbangkan untuk dimiliki. Kesederhanaan biasanya berhubungan dengan beban yang diletakkan sesuatu pada seseorang yang mencoba untuk menjelaskan atau memahaminya
+		</div>
+        <div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Aura-Gelang-Keberuntungan-Gelang-Kewibawaan-Gelang-Kebahagiaan-i.5305950.20704970437?sp_atk=be73ad3b-f9fe-443f-9445-915a878e8569&xptdk=be73ad3b-f9fe-443f-9445-915a878e8569"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-kedamaian-gelang-keberuntungan-gelang-aura"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tali-kedamaian-i6679128556-s12700428361.html?clickTrackInfo=query%253A%253Bnid%253A6679128556%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679128556_ID%253Bprice%253A7000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6679128556%253Bsku_id%253A12700428361%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a64R06xe"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+ <div id="popup3" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="red 1mm 1.jpg" alt="">
+        </div>
+        
+		<h2>Gelang Keberuntungan</h2>
+		<a class="close" href="#secondpart">&times;</a>
+		<div class="content">
+			Keberuntungan adalah fenomena dan kepercayaan yang mendefinisikan pengalaman dari peristiwa-peristiwa yang sangat positif, negatif, atau tidak mungkin.
+		</div>
+        <div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Aura-Gelang-Keberuntungan-Gelang-Kewibawaan-Gelang-Kebahagiaan-i.5305950.20704970437?sp_atk=be73ad3b-f9fe-443f-9445-915a878e8569&xptdk=be73ad3b-f9fe-443f-9445-915a878e8569"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-keberuntungan-gelang-aura-gelang-makna-1mm"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tali-keberuntungan-i6679118013-s12700368979.html?clickTrackInfo=query%253A%253Bnid%253A6679118013%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679118013_ID%253Bprice%253A7000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6679118013%253Bsku_id%253A12700368979%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6jx2rB1"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+<div id="popup4" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="magnet 1.jpg" alt="">
+        </div>
+        
+		<h2>Gelang Kewibawaan Magnet</h2>
+		<a class="close" href="#secondpart">&times;</a>
+		<div class="content">
+			kewibawaan adalah Kredibilitas seorang pemimpin adalah kualitas, kapabilitas, atau kekuatan untuk menimbulkan kepercayaan. Aplikasi umum yang sah dari istilah kredibilitas berkaitan dengan kesaksian dari seseorang atau suatu lembaga selama persidangan.
+		</div>
+        <div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Aura-Gelang-Kewibawaan-Gelang-Keberuntungan-Gelang-Pengunci-Magnet-i.5305950.20204984490?sp_atk=04ce128d-77f6-4488-b6e9-38f876ca4207&xptdk=04ce128d-77f6-4488-b6e9-38f876ca4207"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-keberuntungan-magnet-gelang-aura-gelang-tali-gold"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-keberuntungan-pengunci-magnet-i6679212187-s12700624504.html?clickTrackInfo=query%253A%253Bnid%253A6679212187%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679212187_ID%253Bprice%253A50000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100769%253Bitem_id%253A6679212187%253Bsku_id%253A12700624504%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6i4M8OF"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+<div id="popup5" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="hitam 1mm 1.jpg" alt="">
+        </div>
+        
+		<h2>Gelang Kewibawaan</h2>
+		<a class="close" href="#secondpart">&times;</a>
+		<div class="content">
+			kewibawaan adalah Kredibilitas seorang pemimpin adalah kualitas, kapabilitas, atau kekuatan untuk menimbulkan kepercayaan. Aplikasi umum yang sah dari istilah kredibilitas berkaitan dengan kesaksian dari seseorang atau suatu lembaga selama persidangan.
+		</div>
+        <div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Aura-Gelang-Keberuntungan-Gelang-Kewibawaan-Gelang-Kebahagiaan-i.5305950.20704970437?sp_atk=427cf79f-a951-4e8e-8955-900b55de8bae&xptdk=427cf79f-a951-4e8e-8955-900b55de8bae"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-keberuntungan-gelang-aura-gelang-hitam-1mm"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tali-kewibawaan-i6679130394-s12700416068.html?clickTrackInfo=query%253A%253Bnid%253A6679130394%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679130394_ID%253Bprice%253A6000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6679130394%253Bsku_id%253A12700416068%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6qVEbfV"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+<div id="popup6" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="hijau 1mm 1.jpg" alt="">
+        </div>
+		<h2>Gelang Kedamaian</h2>
+		<a class="close" href="#secondpart">&times;</a>
+		<div class="content">
+            Damai membawa konotasi yang positif; hampir tidak ada orang yang menentang perdamaian; Perdamaian dunia merupakan tujuan utama dari kemanusiaan. Beberapa kelompok, berpandangan berbeda tentang apakah damai itu, bagaimana mencapai kedamaian, dan apakah perdamaian benar-benar mungkin terjadi.		</div>
+        <div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Aura-Gelang-Keberuntungan-Gelang-Kewibawaan-Gelang-Kebahagiaan-i.5305950.20704970437?sp_atk=427cf79f-a951-4e8e-8955-900b55de8bae&xptdk=427cf79f-a951-4e8e-8955-900b55de8bae"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-kedamaian-gelang-keberuntungan-gelang-aura"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tali-kedamaian-i6679128556-s12700428361.html?clickTrackInfo=query%253A%253Bnid%253A6679128556%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679128556_ID%253Bprice%253A7000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6679128556%253Bsku_id%253A12700428361%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6HvS3v9"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+<div id="popup7" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="pink 1mm 1.jpg" alt="">
+        </div>
+		<h2>Gelang Feminim dan Lembut</h2>
+		<a class="close" href="#secondpart">&times;</a>
+		<div class="content">
+            Karena murah senyum, cewek feminim pun memiliki kesan yang ramah, lembut serta mudah untuk diajak bicara        <div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Aura-Gelang-Keberuntungan-Gelang-Kewibawaan-Gelang-Kebahagiaan-i.5305950.20704970437?sp_atk=427cf79f-a951-4e8e-8955-900b55de8bae&xptdk=427cf79f-a951-4e8e-8955-900b55de8bae"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-keberuntungan-gelang-aura-gelang-feminim-1mm"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tali-feminim-i6679140067-s12700388772.html?clickTrackInfo=query%253A%253Bnid%253A6679140067%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679140067_ID%253Bprice%253A7000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6679140067%253Bsku_id%253A12700388772%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6mXVvHH"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup8" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="tridatu 7mantra 1.jpg" alt="">
+        </div>
+		<h2>Tridatu Mantra</h2>
+		<a class="close" href="#g1">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Tridatu Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Gelang-Tridatu-Bali-Tridatu-Tridatu-Khas-Bali-Gelang-Bali-i.5305950.15685473107?sp_atk=641ffbe4-b8de-427d-8b98-507fde9d7b4b&xptdk=641ffbe4-b8de-427d-8b98-507fde9d7b4b"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-bali-gelang-tali-tridatu-gelang-tali-1mm"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-polos-khas-bali-i6679206412-s12700656156.html?clickTrackInfo=query%253A%253Bnid%253A6679206412%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679206412_ID%253Bprice%253A4000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6679206412%253Bsku_id%253A12700656156%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6I4POnt"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+
+<div id="popup9" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="Tiger Emerald 1.jpg" alt="">
+        </div>
+		<h2>Tiger Emerald</h2>
+		<a class="close" href="#g2">&times;</a>
+		<div class="content">
+            Tiger's eye atau mata harimau adalah salah satu batu kesehatan yang cukup populer di kalangan masyarakat Indonesia. Batu kesehatan ini dipercaya mampu menambah motivasi dan mengurangi kecemasan, keraguan dalam diri, dan rasa takut, sehingga sang pengguna akan merasa lebih percaya diri.            <div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Kewibawaan-dengan-Batu-Green-Emerald-Colour-dan-Tiger-Eye's-Gelang-Tridatu-i.5305950.21615134591?sp_atk=90c96e95-258a-471d-89e5-118c001703b8&xptdk=90c96e95-258a-471d-89e5-118c001703b8"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-dengan-batu-green-emerald-colour-dan-tiger-eye-s-tridatu"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-dengan-batu-green-emerald-colour-dan-tiger-eyes-tridatu-i6678812156-s12699690528.html?clickTrackInfo=query%253A%253Bnid%253A6678812156%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6678812156_ID%253Bprice%253A25000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6678812156%253Bsku_id%253A12699690528%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6d2LkXI"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup10" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="tiger eye  2.jpg" alt="">
+        </div>
+		<h2>Tiger's Eye</h2>
+		<a class="close" href="#g3">&times;</a>
+		<div class="content">
+            Tiger's eye atau mata harimau adalah salah satu batu kesehatan yang cukup populer di kalangan masyarakat Indonesia. Batu kesehatan ini dipercaya mampu menambah motivasi dan mengurangi kecemasan, keraguan dalam diri, dan rasa takut, sehingga sang pengguna akan merasa lebih percaya diri.            <div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Aura-Dengan-Batu-Tiger-Eye's-Khas-Bali-Gelang-Tiger-Eye's-Gelang-Tridatu-i.5305950.18414795474?sp_atk=24b73868-9b1b-401b-8199-39d8f65f615b&xptdk=24b73868-9b1b-401b-8199-39d8f65f615b"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-kepercayaan-diri-dengan-batu-tiger-eye-s-khas-bali-1"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-kepercayaan-diri-dengan-batu-tiger-eyes-khas-bali-i6679070340-s12700262737.html?clickTrackInfo=query%253A%253Bnid%253A6679070340%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679070340_ID%253Bprice%253A15000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100802%253Bitem_id%253A6679070340%253Bsku_id%253A12700262737%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6j8Jyxt"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup11" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="rutile moonstone 1.jpg" alt="">
+        </div>
+		<h2>Rambut Sendana Barjat Api</h2>
+		<a class="close" href="#g4">&times;</a>
+		<div class="content">
+            batu barjad api ini memiliki energi khusus yang mampu menarik serta melancarkan rejeki terhadap bisnis yang anda tekuni saat ini.<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Aura-Rejeki-Dengan-Batu-Rambut-Sendana-dan-Barjad-Api-Khas-Bali-Gelang-Tridatu-gelang-tridatu-rambut-sendana-gelang-rambut-sendana-i.5305950.19115151498?sp_atk=cd0f6424-8513-44e0-ba83-94bce217cc6a&xptdk=cd0f6424-8513-44e0-ba83-94bce217cc6a"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-aura-rejeki-dengan-batu-rambut-sendana-dan-barjad-api-gelang"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-aura-rejeki-dengan-batu-rambut-sendana-dan-barjad-api-i6678632724-s12699394958.html?clickTrackInfo=query%253A%253Bnid%253A6678632724%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6678632724_ID%253Bprice%253A25000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100802%253Bitem_id%253A6678632724%253Bsku_id%253A12699394958%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6zRTjh5"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup12" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="rutile lava 1.jpg" alt="">
+        </div>
+		<h2>Rambut Sendana Lava</h2>
+		<a class="close" href="#g5">&times;</a>
+		<div class="content">
+            Jika anda mengalami suatu musibah dalam menjalankan usaha anda sehingga membuat penurunan keuntungan drastis, anda dapat membangkitkan serta menaikkan kembali keuntungan dalam usaha anda.<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Aura-Rejeki-Dengan-Batu-Rambut-Sendana-dan-Lava-Stone-Khas-Bali-Gelang-Tridatu-Rambut-Sendana-gelang-Tridatu-Lava-Stone-i.5305950.18815149539?sp_atk=ba0e03a0-5aee-44dc-aa18-d18b6b865573&xptdk=ba0e03a0-5aee-44dc-aa18-d18b6b865573"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-aura-rejeki-dengan-batu-rambut-sendana-dan-lava-stone-gelang?extParam=ivf%3Dfalse"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-aura-rejeki-dengan-batu-rambut-sendana-dan-lava-stone-i6678740263-s12699558629.html?clickTrackInfo=query%253A%253Bnid%253A6678740263%253Bsrc%253AlazadaInShopSrp%253Brn%253A4c05546b79e22d686fc61afb9f9608dc%253Bregion%253Aid%253Bsku%253A6678740263_ID%253Bprice%253A25000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6678740263%253Bsku_id%253A12699558629%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.24"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup13" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="kecubung 1.jpg" alt="">
+        </div>
+		<h2>Rambut Sendana kecubung</h2>
+		<a class="close" href="#g6">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Tridatu Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Aura-Rejeki-dengan-Batu-Rambut-Sendana-dan-Kecubung-(-Amethys-)-Gelang-Tridatu-Rambut-Sendana-Gelang-Tridatu-Sendana-Gelang-Tridatu-Kecubung-Gelang-rambut-Sendana-Gelang-Kecubung-i.5305950.19615145808?sp_atk=3419caa7-3177-4930-8b6c-869090724a2e&xptdk=3419caa7-3177-4930-8b6c-869090724a2e"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-aura-rejeki-dengan-batu-rambut-sendana-dan-kecubung-stiker"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-aura-rejeki-dengan-batu-rambut-sendana-dan-kecubung-i6678762010-s12699642462.html?clickTrackInfo=query%253A%253Bnid%253A6678762010%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6678762010_ID%253Bprice%253A25000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6678762010%253Bsku_id%253A12699642462%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6TnNouE"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup14" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="rutile aquamarin 2.jpg" alt="">
+        </div>
+		<h2>Rambut Sendana Aquamarine/h2>
+		<a class="close" href="#g7">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Tridatu Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Aura-Rejeki-dengan-Batu-Rambut-Sendana-dan-Aquamarine-i.5305950.20515142723?sp_atk=76a7a6f3-fe75-46f3-b1cd-d295e23763bd&xptdk=76a7a6f3-fe75-46f3-b1cd-d295e23763bd"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-aura-rejeki-dengan-batu-rambut-sendana-dan-aquamarine-stiker"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-aura-rejeki-dengan-batu-rambut-sendana-dan-aquamarine-i6678778855-s12699686322.html?clickTrackInfo=query%253A%253Bnid%253A6678778855%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6678778855_ID%253Bprice%253A22000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6678778855%253Bsku_id%253A12699686322%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6sq3Ecf"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup15" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="rutile 1.jpg" alt="">
+        </div>
+		<h2>Rambut Sendana </h2>
+		<a class="close" href="#g8">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Tridatu Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Aura-Rambut-Sendana-Khas-Bali-Gelang-Tridatu-Rambut-Sendana-Gelang-Pelancar-Rejeki-Gelang-Rejeki-Gelang-Keberuntungan-Gelang-Aura-Gelang-Batu-Rutile-Quartz-Gelang-Batu-Keberuntungan-i.5305950.21714787213?sp_atk=d5c8da75-bf1d-46ed-8950-17fa3fba05a1&xptdk=d5c8da75-bf1d-46ed-8950-17fa3fba05a1"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-rambut-sendana-khas-bali-gelang-pelancar-rejeki-1"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-aura-dengan-batu-rambut-sendana-khas-bali-i6679051000-s12700266904.html?clickTrackInfo=query%253A%253Bnid%253A6679051000%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679051000_ID%253Bprice%253A15000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100802%253Bitem_id%253A6679051000%253Bsku_id%253A12700266904%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6m0c3ko"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup16" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="pirus giok emeral 1.jpg" alt="">
+        </div>
+		<h2>Three angle </h2>
+		<a class="close" href="#g9">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Tridatu Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Three-Angels-dengan-Batu-Giok-Pirus-dan-Green-Emerald-Colour-Khas-Bali-Gelang-Tridatu-Three-Angels-Gelang-Tridatu-i.5305950.21315130952?sp_atk=d9502bd4-63af-4504-a597-674bb0eeeb74&xptdk=d9502bd4-63af-4504-a597-674bb0eeeb74"><img src="sp1.png" alt=""></a>
+            <a href="tokopedia.com/moksha-id/gelang-tridatu-three-angels-dengan-batu-giok-pirus-dan-emerald-colour-stiker"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-three-angels-dengan-batu-giok-pirus-dan-emerald-colour-i6678788935-s12699708798.html?clickTrackInfo=query%253A%253Bnid%253A6678788935%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6678788935_ID%253Bprice%253A35000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100802%253Bitem_id%253A6678788935%253Bsku_id%253A12699708798%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6BDwshb"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+
+<div id="popup18" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="pirus giok emeral 1.jpg" alt="">
+        </div>
+		<h2>Pirus </h2>
+		<a class="close"href="#g10">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Pirus Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Pelindung-Dengan-Batu-Pirus-Khas-Bali-Gelang-Tridatu-Pirus-Gelang-Pirus-Pirus-i.5305950.17276940398?sp_atk=d6e4eacb-e48f-4c6e-940c-815b1a4ba69c&xptdk=d6e4eacb-e48f-4c6e-940c-815b1a4ba69c"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-protect-dengan-batu-pirus-khas-bali-stiker"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-protect-dengan-batu-pirus-khas-bali-i6678818483-s12699724981.html?clickTrackInfo=query%253A%253Bnid%253A6678818483%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6678818483_ID%253Bprice%253A30000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100802%253Bitem_id%253A6678818483%253Bsku_id%253A12699724981%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6ofmC21"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup19" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="moonstone 1.jpg" alt="">
+        </div>
+		<h2>Barjat Api </h2>
+		<a class="close" href="#g11">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Barjat Api Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Aura-Kesuksesan-Bisnis-Dengan-Batu-Barjad-Api-Khas-Bali-Gelang-Tridatu-Kesuksesan-Gelang-Tridatu-Barjad-Api-Gelang-Barjad-Api-i.5305950.18614816648?sp_atk=9450d4b1-a71d-4b56-a07e-464e4d397867&xptdk=9450d4b1-a71d-4b56-a07e-464e4d397867"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-kesuksesan-bisnis-dengan-batu-barjad-api-1"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-kesuksesan-bisnis-dengan-batu-barjad-api-i6679038740-s12700240237.html?clickTrackInfo=query%253A%253Bnid%253A6679038740%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679038740_ID%253Bprice%253A15000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6679038740%253Bsku_id%253A12700240237%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6CpbFXl"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup20" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="lava 1 1.jpg" alt="">
+        </div>
+		<h2>Lava </h2>
+		<a class="close" href="#g12">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Lava Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Aura-dengan-batu-Natural-Lava-Stone-khas-Bali-Original-Gelang-Tridatu-Aura-Gelang-Tridatu-Lava-Stone-Gelang-Lava-Stone-Gelang-Tridatu-lava-i.5305950.18314806612?sp_atk=28aeaa38-31c6-476f-bf3f-683453cca108&xptdk=28aeaa38-31c6-476f-bf3f-683453cca108"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-ketenangan-emosi-dengan-batu-natural-lava-stone-stiker"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-ketenangan-emosi-dengan-batu-natural-lava-stone-i6679056595-s12700240653.html?clickTrackInfo=query%253A%253Bnid%253A6679056595%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679056595_ID%253Bprice%253A15000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100802%253Bitem_id%253A6679056595%253Bsku_id%253A12700240653%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6JWCkCa"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup21" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="kecubung 1.jpg" alt="">
+        </div>
+		<h2>Kecubung </h2>
+		<a class="close" href="#g13">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Kecubung Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Penambah-Energi-Positif-Dengan-Batu-Amethys-Khas-Bali-Gelang-Tridatu-Healing-Gelang-Tridatu-Amethys-Gelang-Tridatu-Kecubung-gelang-Amethys-i.5305950.20815105952?sp_atk=0de8319c-1475-424f-875d-dde53da3540e&xptdk=0de8319c-1475-424f-875d-dde53da3540e"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-ketenangan-emosi-dengan-batu-natural-lava-stone-stiker"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-ketenangan-emosi-dengan-batu-natural-lava-stone-i6679056595-s12700240653.html?clickTrackInfo=query%253A%253Bnid%253A6679056595%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679056595_ID%253Bprice%253A15000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100802%253Bitem_id%253A6679056595%253Bsku_id%253A12700240653%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6JWCkCa"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup22" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="emerald 1.jpg" alt="">
+        </div>
+		<h2>Emerald </h2>
+		<a class="close" href="#g14">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Emerald Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Sultan-Dengan-Batu-Green-Emerald-Colour-Khas-Bali-Gelang-Tridatu-Emerald-Gelang-Tridatu-Sultan-Gelang-Tridatu-i.5305950.20915105050?sp_atk=6664f3a4-9237-445b-b617-a97ee48b145c&xptdk=6664f3a4-9237-445b-b617-a97ee48b145c"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-sultan-dengan-batu-green-emerald-colour-khas-bali-stiker"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-kaisar-dengan-batu-green-emerald-dan-giok-khas-bali-i6678832353-s12699808569.html?clickTrackInfo=query%253A%253Bnid%253A6678832353%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6678832353_ID%253Bprice%253A30000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100802%253Bitem_id%253A6678832353%253Bsku_id%253A12699808569%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6ZRnFne"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup23" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="aquamarine  1.jpg" alt="">
+        </div>
+		<h2>Aquamarine</h2>
+		<a class="close" href="#g15">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Aquamarine Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Aura-Pemikat-Hati-Dengan-Batu-Aquamarine-Khas-Bali-Gelang-Tridatu-Aquamarine-Gelang-Aquamarine-Gelang-Kelahiran-Gelang-Tridatu-Gelang-Batu-Aquamarine-Gelang-Kelahiran-Maret-i.5305950.19415051816?sp_atk=d0f2a4c4-837c-4c2e-9ba2-2d27a4f916a7&xptdk=d0f2a4c4-837c-4c2e-9ba2-2d27a4f916a7"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-kasih-sayang-dengan-batu-aquamarine-khas-bali-stiker"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-kasih-sayang-dengan-batu-aquamarine-khas-bali-i6679032184-s12700212265.html?clickTrackInfo=query%253A%253Bnid%253A6679032184%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679032184_ID%253Bprice%253A15000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100802%253Bitem_id%253A6679032184%253Bsku_id%253A12700212265%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6cZj8w5"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup24" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="wisnu 1.jpg" alt="">
+        </div>
+		<h2>Wisnu>
+		<a class="close" href="#g16">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan wisnu Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Brahma-Gelang-Tridatu-Tridatu-Gelang-Tridatu-Bali-i.5305950.13992934973?sp_atk=9e2ac521-a8dd-4d41-8fca-a1b97e731a13&xptdk=9e2ac521-a8dd-4d41-8fca-a1b97e731a13"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-wisnu-gelang-tridatu-motif-gelang-tali-tridatu"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-wisnu-khas-bali-i6679102158-s12700324170.html?clickTrackInfo=query%253A%253Bnid%253A6679102158%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679102158_ID%253Bprice%253A15000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6679102158%253Bsku_id%253A12700324170%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6Y9vhA8"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup25" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="tridatu 1mm 1.jpg" alt="">
+        </div>
+		<h2>Tridatu</h2>
+		<a class="close" href="#g17">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Tridatu Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Gelang-Tridatu-Bali-Tridatu-Tridatu-Khas-Bali-Gelang-Bali-i.5305950.15685473107?sp_atk=4d9a64b2-b081-4cbb-98d0-462f1fa7e594&xptdk=4d9a64b2-b081-4cbb-98d0-462f1fa7e594"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tali-tridatu-khas-bali-grosir-1mm"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-polos-khas-bali-i6679206412-s12700656156.html?clickTrackInfo=query%253A%253Bnid%253A6679206412%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679206412_ID%253Bprice%253A4000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6679206412%253Bsku_id%253A12700656156%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6clZI5m"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup26" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="hello kitty 1.jpg" alt="">
+        </div>
+		<h2>Hello Kitty</h2>
+		<a class="close" href="#g18">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Hello Kitty Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Keberuntungan-Dengan-Hello-Kitty-Gelang-Aura-Gelang-i.5305950.20704987241?sp_atk=da7f6a04-6147-431e-ba26-a0c4bd9aebdb&xptdk=da7f6a04-6147-431e-ba26-a0c4bd9aebdb"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-keberuntungan-hello-kitty-gelang-aura-gelang-makna-hello-kitty-keberuntungan"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tali-keberuntungan-hello-kitty-i6679076962-s12700336628.html?clickTrackInfo=query%253A%253Bnid%253A6679076962%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679076962_ID%253Bprice%253A10000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100802%253Bitem_id%253A6679076962%253Bsku_id%253A12700336628%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6loeBcM"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup27" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="brahma 1.jpg" alt="">
+        </div>
+		<h2>Brahma</h2>
+		<a class="close" href="#g19">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Brahma Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Tridatu-Brahma-Gelang-Tridatu-Tridatu-Gelang-Tridatu-Bali-i.5305950.13992934973?sp_atk=2e6bacc5-78eb-418e-a802-05b1baf95aee&xptdk=2e6bacc5-78eb-418e-a802-05b1baf95aee"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-tridatu-brahma-gelang-tridatu-motif-gelang-tali-tridatu"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-tridatu-brahma-khas-bali-i6679102289-s12700328178.html?clickTrackInfo=query%253A%253Bnid%253A6679102289%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679102289_ID%253Bprice%253A15000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100801%253Bitem_id%253A6679102289%253Bsku_id%253A12700328178%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6QOTmAC"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup28" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="black pink 1.jpg" alt="">
+        </div>
+		<h2>Black Pink</h2>
+		<a class="close" href="#g20">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Black Pink Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Aura-2-Warna-Gelang-Keberuntungan-Gelang-2-Warna-Gelang-i.5305950.18605397120?sp_atk=ec81a57b-eeaf-4501-bf33-31d20b8ea265&xptdk=ec81a57b-eeaf-4501-bf33-31d20b8ea265"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-keberuntungan-2-warna-gelang-aura-gelang-feminim"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-feminim-dan-kewibawaan-i6679104027-s12700302456.html?clickTrackInfo=query%253A%253Bnid%253A6679104027%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679104027_ID%253Bprice%253A15000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100802%253Bitem_id%253A6679104027%253Bsku_id%253A12700302456%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6rPkBi6"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+<div id="popup29" class="overlay">
+	<div class="popup">
+        <div class="imgpop">
+            <img src="crown 1.jpg" alt="">
+        </div>
+		<h2>Crown</h2>
+		<a class="close" href="#g20">&times;</a>
+		<div class="content">
+            Gelang Keberuntungan Crown Mantra Tibet Mantra Om Mani Padme Hum<div class="iconpop">
+            <a href="https://shopee.co.id/Gelang-Keberuntungan-Dengan-Mahkota-Gelang-Aura-Gelang-Kewibawaan-De-i.5305950.19804989855?sp_atk=35438203-63e7-4967-ab56-b93ba6a679cd&xptdk=35438203-63e7-4967-ab56-b93ba6a679cd"><img src="sp1.png" alt=""></a>
+            <a href="https://www.tokopedia.com/moksha-id/gelang-keberuntungan-dengan-mahkota-gelang-aura-gelang-makna-keberuntungan-crown"><img src="sp2.png" alt=""></a>
+            <a href="https://www.lazada.co.id/products/gelang-keberuntungan-mahkota-i6679082731-s12700326500.html?clickTrackInfo=query%253A%253Bnid%253A6679082731%253Bsrc%253AlazadaInShopSrp%253Brn%253Ab5a40dcccfc09bd623338aefc897d0b9%253Bregion%253Aid%253Bsku%253A6679082731_ID%253Bprice%253A10000.00%253Bclient%253Adesktop%253Bsupplier_id%253A400693167303%253Basc_category_id%253A10100802%253Bitem_id%253A6679082731%253Bsku_id%253A12700326500%253Bshop_id%253A5119647&mp=1&spm=a2o4j.seller.list.i31.544750a6IiAc5V"><img src="sp3.png" alt=""></a>
+            <a href="https://www.etsy.com/shop/MokshaID"><img src="sp5.png" alt=""></a>
+        </div>
+	</div>
+</div>
+</div>
+
+    
+</body>
+</html>
